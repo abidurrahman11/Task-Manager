@@ -1,0 +1,150 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-image: url(images/todo-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+/* header */
+
+h1 {
+    color: rgb(44, 44, 44);
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgb(204, 194, 194);
+    text-shadow: 2px 2px 2px #fff;
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+
+
+/* styles for text input box are */
+
+.input-container {
+    position: fixed;
+    bottom: 6px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs {
+    background: rgba(204, 194, 194, 0.692);
+    backdrop-filter: blur(18px);
+    padding: 18px 2px;
+    width: 85%;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(99, 97, 97);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: rgb(44, 44, 44);
+}
+
+#inputTask {
+    border: 2px solid rgb(44, 44, 44);
+    outline: none;
+    padding: 6px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+#addBtn {
+    border: 2px solid rgb(44, 44, 44);
+    padding: 6px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+#addBtn:active {
+    background: rgb(44, 44, 44);
+    color: #fff;
+}
+
+#addBtn:hover {
+    cursor: pointer;
+}
+
+/* styling for tasks container */
+
+.task-container {
+    margin: 0 8%;
+    margin-bottom: 150px;
+}
+
+
+/* styling for the components created by JS */
+
+.taskBox {
+    list-style: none;
+    margin: 10px 0;
+    padding: 10px 4%;
+    background: rgb(44, 44, 44);
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.taskBox:hover {
+    box-shadow: 2px 2px 8px gray;
+}
+
+.task {
+    white-space: pre;
+    flex: 2;
+}
+
+.checkBtn {
+   padding:  4px 8px;
+   border-radius: 6px;
+   margin-left: 8px;
+   font-size: 16px;
+   font-weight: 600;
+   color: green;
+   border: 2px solid green;
+}
+
+.checkBtn:hover {
+    color: #fff;
+    background: green;
+    cursor: pointer;
+}
+
+.deleteBtn {
+    padding:  4px 8px;
+    border-radius: 6px;
+    margin-left: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: red;
+    border: 2px solid red;
+}
+
+.deleteBtn:hover {
+    color: #fff;
+    background: red;
+    cursor: pointer;
+}
+
+
+/* toggle class */
+
+.check {
+    text-decoration: line-through;
+    color: orange;
+}
